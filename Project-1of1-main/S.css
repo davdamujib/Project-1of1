@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500,600;700;800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', 'sans-serif';
 }
 
 .headbox {
@@ -10,13 +12,8 @@
     padding-right: 45px;
 }
 
-span {
-    color: red;
-    font-size: 40px;
-}
-
 body {
-    background-color: black;
+    background-color: #0c0f0c;
 }
 
 nav {
@@ -47,22 +44,12 @@ nav ul li {
 
 nav li a {
     font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.8px;
     text-transform: uppercase;
     padding: 0px 30px;
     color: white;
     text-decoration: none;
-}
-
-nav li a:hover {
-    color: red;
-    transition: all 0.4s ease 0s;
-}
-
-.content img {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
 }
 
 nav .logo img {
@@ -83,6 +70,238 @@ nav .logo img {
     width: 20px;
     display: none;
 }
+
+nav li a:hover {
+    color: #2d72b8;
+    transition: all 0.4s ease 0s;
+}
+
+.full-box {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.flex-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 100px;
+}
+
+.wrapper{
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.car-img{
+    width: 100%;
+    height: 100%;
+    opacity: 4;
+}
+
+
+.wow{
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.title-box{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.heading{
+    width: 100%;
+    /* height: 100%; */
+    font-size: 54px;
+    font-weight: 900;
+    letter-spacing: 2.9px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif !important;
+    text-align: left;
+    color: #fefefe;
+}
+
+ .title{
+    width: 100%;
+    font-size: 35px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    color: #2d72b8;
+    font-family: 'Poppins', sans-serif;
+} 
+
+.check-but{
+    margin-top: 40px;
+}
+
+
+.btn2 {
+    position: relative;
+    display: inline-block;
+    padding: 15px 15px;
+    border: 2px solid #2d72b8;
+    text-transform: uppercase;
+    color: #fefefe;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s;
+    border-radius: 30px;
+  }
+  
+  .btn2::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - -2px);
+    background-color: #0c0f0c;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+  }
+  
+  .btn2::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 50px);
+    background-color: #0c0f0c;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+  }
+  
+  .btn2:hover::before {
+    transform: translateY(-25px);
+    height: 0;
+  }
+  
+  .btn2:hover::after {
+    transform: scaleX(0);
+    transition-delay: 0.15s;
+  }
+  
+  .btn2:hover {
+    border: 2px solid #2d72b8;
+  }
+  
+  .btn2 span {
+    position: relative;
+    z-index: 3;
+  }
+  
+  button {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+  }
+
+
+  .footer-box{
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+    box-sizing: border-box;
+    background-color: #13161d;
+  }
+
+.inner-p{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+
+  .flex{
+    padding: 30px;
+    display: flex;
+  }
+
+  .footer-content-box1{
+    width: 100%;
+  }
+
+  .footer-content-box2{
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer-logo{
+    width: 100%;
+  }
+
+  .footer-title-box{
+    width: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .footer-title-box2{
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer-title{
+    color: #fefefe;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2.9px;
+  }
+
+  .content-box2{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+
+  .content-font{
+    color: #fefefe;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .link-head{
+    color: #2d72b8;
+    font-weight: 600;
+  }
+
+  .link-head:hover{
+    text-decoration: none;
+  }
+
+  .social-media{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    padding: 10px 15px 5px 0px;
+  }
+
+
+
+  #social-icon{
+    width: 40px;
+    height: 40px;
+    padding: 15px 15px 0px 0px ;
+    justify-content: space-around;
+  }
 
 
 @media only screen and (max-width: 480px) {
@@ -117,14 +336,14 @@ nav .logo img {
         display: flex;
         flex-direction: column;
         text-align: center;
+        background-color: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(8px);
-        background-color: rgb(255, 255, 255,.1);
         transition: .3s;
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-            rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-            rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
             clip-path: circle(0px at calc(100% - 45px) 45px);
     }
 
@@ -138,6 +357,50 @@ nav .logo img {
 
     #nav:checked~ul {
         clip-path: circle(75%);
+    }
+
+    .full-box {
+        padding: 0;
+    }
+
+    .wrapper{
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+    
+    .car-img{
+        width: 100%;
+        
+    }
+    
+    .flex-box{
+        display: inline-block;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .wow{
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .heading{
+        font-size: 24px;
+        padding-top: 15px;
+    }
+    
+     .title{
+        font-size: 25px;
+    }
+    
+    .flex{
+        display: inline-block;
+    }
+
+    .inner-p{
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
 }
